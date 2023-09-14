@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us with our survey</p>
+   <form id="survey-form">
+     <div>
+      <label id="name-label">Name <input id="name" type="text" required placeholder="Enter your name" /></label>
+      <label id="email-label">E-mail <input id="email" Type="email" required placeholder="Enter your email" /></label>
+      <label id="number-label">Age <input id="number" type="number" min="13" max="80" placeholder="Your age" /><label>
+     </div>
+     <div>
+      <label>Your sex?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          <option value="3">Other</option>
+        </select>
+      </label>
+     </div>
+     <div>
+      <label>Would you recommend our site to a friend?
+       <label><input type="radio" name="group1" value="yes" class="inline" />Yes</label>
+       <label><input type="radio" name="group1" value="maybe" class="inline" />Maybe</label>
+       <label><input type="radio" name="group2" value="no" class="inline" />No</label>
+       <label><input type="radio" name="group2" value="unspecified" class="inline" />Unspecified</label>
+      </label>
+     </div>
+     <div>
+       <label>What would you like for us to improve?
+         <label><input type="checkbox" value="1" class="inline" />Visuals</label>
+         <label><input type="checkbox" value="2" class="inline" />Content</label>
+         <label><input type="checkbox" value="3" class="inline" />Community</label>
+       </label>
+     </div>
+     <div>
+       <label>Any suggestion or comments?
+         <textarea placeholder="Enter your thoughts here"></textarea>
+       </label>
+     </div>
+     <input type="submit" id="submit" />
+  </form>
+ </body>
+</html>
